@@ -105,6 +105,6 @@ public class Blokkusus implements ModInitializer {
                     entries.add(ancientFossilBlockItem);
                 });
 
-        LOGGER.info("Blokkusus custom blocks successfully loaded!");
+        LOGGER.info("America ya!");
     }
 }
