@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "blokkusus",
+	"version": "${version}",
+	"name": "Blokkusus",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blokkusus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.edonme.blokkusus.Blokkusus"
+		],
+		"client": [
+			"dev.edonme.blokkusus.client.BlokkususClient"
+		]
+	},
+	"mixins": [
+		"blokkusus.mixins.json",
+		{
+			"config": "blokkusus.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
